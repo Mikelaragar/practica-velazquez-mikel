@@ -2,13 +2,13 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 header{
     left:0;
     top:0;
     width:100%;
     height:100px;
-
 }
 header h1 {
     font-size: 2.6rem;
@@ -16,37 +16,41 @@ header h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight:200;
 
-
 }
 nav {
-    width: 200px;
-    height: 100%;
-
+    width: 220px;
+    height: 50em;
     overflow-y: scroll;
-    position: absolute;
+
 
 }
 .foto{
+    display: flex;
+    margin-left: 10px;
     left: 200px;
-    height: 100%;
     width: 50%;
-    background-color: red;
-    overflow: auto;
-    position: absolute;
+    height: 100%;
+
 }
-.foto p{color: black;}
-.texto{
-    right: 0px;
+.foto > img{
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+.texto{
     width: 50%;
-    background-color: blue;
-    overflow: auto;
-    position: absolute;
+    padding: 1%;
+    top: 35%;
+    height: 24%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    float: left;
 }
 nav img{
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    margin: auto;
+    margin-left: 13px;
     display: block;
     margin-bottom: 2.5em;
     width: 150px;
@@ -56,4 +60,38 @@ nav img{
 nav img:hover{
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
+}
+
+.titulo-cuadro{
+    font-weight:800;
+    font-size: 2.5em;
+}
+.año,.precio{
+    text-align: center;
+}
+.precio{
+    font-weight: bold;
+}
+button{
+    background-color: #97c1c0;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.93em 2em;
+    border-radius: 0.75em;
+    border: none;
+
+}
+button:hover{
+    background-color: #04c5c0;
+}
+.foto img{
+    height: 100%;
+    width: 100%;
+   object-fit: cover;
+}
+.box{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 86%;
 }
