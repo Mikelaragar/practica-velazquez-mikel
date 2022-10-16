@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Velazquez</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>Cuadros de Velazquez</h1>
-    </header>
-    <main>
-        <section>
-            <div class="box">
+<header>
+    <h1>Cuadros de Velazquez</h1>
+</header>
+<main>
+    <section>
+        <div class="box">
             <nav id="lateral">
                 <img id="breda" src="img/breda-mini.jpg" alt="">
                 <img id="inocencio" src="img/inocencio-mini.jpg" alt="">
@@ -25,16 +25,23 @@
             </nav>
 
             <div class="foto">
-                <img id="imagen" src="img/breda.jpg" alt="">
+                <img class="imagen" src="img/breda.jpg" id="ruta" onclick="abririmg(this.src)">
+            </div>
+            <div id="imagengrande" class="imggrande">
+                <span onclick="cerrarimg()"></span>
+                <img src="img/breda.jpg" id="ruta2" alt="">
             </div>
             <div class="texto">
                 <h1 id="titulo" class="titulo-cuadro">LA RENDICIÓN DE BREDA</h1>
-                <p class="año">1634-35</p><p class="precio">380€</p>
-                <p class="informacion-cuadro">Réplica del cuadro en colores originales y tamño 150 x 80cm</p>
-                <br><button type="button" value="comprar">COMPRAR</button>
+                <p id="año">1634-35</p>
+                <p id="precio"><strong>380€</strong></p>
+                <p id="informacion-cuadro">Réplica del cuadro en colores originales y tamño 150 x 80cm</p>
+                <br>
+                <button type="button" value="comprar">COMPRAR</button>
             </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
 </body>
+<script src="js/script.js"></script>
 </html>

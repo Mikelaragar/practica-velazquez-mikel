@@ -1,30 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&display=swap');
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-header{
-    left:0;
-    top:0;
-    width:100%;
-    height:100px;
+
+header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
 }
+
 header h1 {
     font-size: 2.6rem;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight:200;
+    font-weight: 200;
 
 }
+
 nav {
     width: 220px;
     height: 50em;
     overflow-y: scroll;
-
-
 }
-.foto{
+
+.foto {
     display: flex;
     margin-left: 10px;
     left: 200px;
@@ -32,12 +35,14 @@ nav {
     height: 100%;
 
 }
-.foto > img{
+
+.foto > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.texto{
+
+.texto {
     width: 50%;
     padding: 1%;
     top: 35%;
@@ -47,7 +52,8 @@ nav {
     margin: 0 auto;
     float: left;
 }
-nav img{
+
+nav img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     margin-left: 13px;
@@ -57,22 +63,25 @@ nav img{
     height: 188px;
     transition: -webkit-filter 1s linear, filter 1s linear;
 }
-nav img:hover{
+
+nav img:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
 
-.titulo-cuadro{
-    font-weight:800;
-    font-size: 2.5em;
+.titulo-cuadro {
+    font-weight: 800;
 }
-.año,.precio{
+
+.año, .precio {
     text-align: center;
 }
-.precio{
+
+.precio {
     font-weight: bold;
 }
-button{
+
+button {
     background-color: #97c1c0;
     text-align: center;
     font-weight: bold;
@@ -81,17 +90,39 @@ button{
     border: none;
 
 }
-button:hover{
+
+button:hover {
     background-color: #04c5c0;
 }
-.foto img{
+
+.foto img {
     height: 100%;
     width: 100%;
-   object-fit: cover;
+    object-fit: cover;
 }
-.box{
+
+.box {
     position: absolute;
     display: flex;
     width: 100%;
     height: 86%;
+}
+
+.imggrande {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    position: fixed;
+    justify-content: center;
+    z-index: 1;
+    display: none;
+}
+
+.imggrande > span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: transparent;
 }
