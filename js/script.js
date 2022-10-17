@@ -1,3 +1,4 @@
+//POPAP IMAGEN GRANDE
 const imagengrande = document.getElementById("imagengrande");
 ruta2 = document.getElementById("ruta2");
 
@@ -10,6 +11,7 @@ function cerrarimg() {
     imagengrande.style.display = "none";
 }
 
+//COIGO CLICK IMAGEN CAMBIO DE TEXTO E IMAGEN
 let breda = document.getElementById("breda");
 breda.onclick = function (reference) {
     ruta.src = "img/breda.jpg"

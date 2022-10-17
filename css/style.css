@@ -21,10 +21,34 @@ header h1 {
 
 }
 
+.box {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 86%;
+}
+
 nav {
     width: 220px;
     height: 50em;
     overflow-y: scroll;
+}
+
+nav img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin-left: 13px;
+    display: block;
+    margin-bottom: 2.5em;
+    width: 150px;
+    height: 188px;
+    transition: -webkit-filter 1s linear, filter 1s linear;
+}
+
+nav img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .foto {
@@ -45,28 +69,12 @@ nav {
 .texto {
     width: 50%;
     padding: 1%;
-    top: 35%;
-    height: 24%;
+    top: 50%;
+    height: 25%;
     text-align: center;
     position: relative;
     margin: 0 auto;
     float: left;
-}
-
-nav img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    margin-left: 13px;
-    display: block;
-    margin-bottom: 2.5em;
-    width: 150px;
-    height: 188px;
-    transition: -webkit-filter 1s linear, filter 1s linear;
-}
-
-nav img:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
 }
 
 .titulo-cuadro {
@@ -99,13 +107,6 @@ button:hover {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.box {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 86%;
 }
 
 .imggrande {
