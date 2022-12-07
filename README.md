@@ -233,5 +233,4 @@ breda.onclick = function (reference) {
 | JSS  | Dificil    |
 
 ### Opinion de la práctica
-
 La practica me ha gustado porque ha sido un recordatorio de todo lo que hemos dado de lenguajes de marcas el año pasado, lo que mas me ha costado ha sido ``javascript`` porque el año lo dimos muy rapido y usamos ``jquery`` lo demas me ha parecido facil aunque necesitas tiempo para hacerlo.
